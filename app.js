@@ -29,7 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 connectToDatabase();
 
 // Define routes
-app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
 
 // Catch 404 and forward to error handler
